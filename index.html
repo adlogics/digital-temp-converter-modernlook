@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <div id="main">
+        <div id="temp-container">
+            <div class="temp-content">
+                <h1 id="cont-title">Enter temperature to convert. <span><i id="temp-icon" class="ri-celsius-line"></i></span></h1>
+                <div class="top-content">
+                    <label for="celsius">Celsius</label>
+                    <input type="text" id="Celsius" placeholder="Enter Temperature in °C" oninput="tempCont('Celsius')">
+                </div>
+                <div class="mid-content">
+                    <label for="Fahrenheit">Fahrenheit</label>
+                    <input type="text" id="Fahrenheit" placeholder="Enter Temperature in °F" oninput="tempCont('Fahrenheit')" >
+                </div>
+                <div class="last-content">
+                    <label for="Kelvin">Kelvin</label>
+                    <input type="text" id="Kelvin" placeholder="Enter Temperature in K" oninput="tempCont('Kelvin')" >
+                </div>
+                <button id="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
